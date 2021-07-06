@@ -1,0 +1,282 @@
+*{
+    width: 100%;
+padding: 0%;
+margin: 0;
+box-sizing: border-box;
+text-align: center;
+}
+header{
+    background-image: url("bg.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  /*  text-align: center;
+    justify-content: center; */
+
+
+}
+.container section{
+    margin-top: 100px;
+    color: wheat;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+}
+.container section a{
+   border: 1px solid red;
+   width: 50%;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(252, 2, 2);
+    padding: 10px;
+    border-radius: 20px; 
+}
+.container section a:hover{
+    background-color: rgba(19, 18, 18, 0.5);
+ border: #000;
+}
+.container p {
+    padding-top: 5px;
+    padding-bottom: 40px;
+}
+.container h1{
+    color: white;
+    font-size: 3em;
+    font-family: ;
+    margin: 15px;
+    text-shadow: 2px 2px  black;
+}
+nav{
+   display: flex;
+   width: 100%;
+   justify-content:center;
+   align-items: center;
+   background-color:rgb(1, 1, 0.5,0.5);;
+   border: 1px solid black;
+  
+}
+nav li a{
+    text-decoration:none;
+    font-size: 20px;
+    background-color: transparent;
+    color:azure;
+    padding: 5px;
+   
+}
+nav li a:hover{
+    background-color: rgba(20, 4, 4, 0.5) ;
+    border: 1px solid black;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.logo{
+    color: azure;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-style:italic;
+    text-shadow: 1px 1px wheat;
+}
+.logo:hover{
+    color: red;
+}
+
+
+nav ul{
+    display: flex;
+}
+nav ul li {
+    list-style: none;
+    padding: 10px 20px;
+}
+h1{
+    padding: 20px 20px;
+}
+.change-content:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color:antiquewhite;
+    font-size:2rem;
+  }
+@keyframes changetext{
+    0%{content:"If you’re afraid of butter, use cream.";}
+    30%{content: "Food is symbolic of love when words are inadequate.";}
+    60%{content: "Vegetables are a must on a diet. I suggest carrot cake, zucchini bread, and pumpkin pie.";}
+    100%{content: "Spaghetti can be eaten most successfully if you inhale it like a vacuum cleaner.";}
+}
+.speciality{
+    padding-left: 20px;
+}
+span{
+    color: red;
+}
+.speciality div{
+    float: left;
+    margin: 2px;
+    width: 32%;
+    padding:  3px 10px;
+    padding-bottom: 10px;
+    border: 1px  solid black;
+    box-shadow: 5px  solid black;
+    text-align: center;
+    height: auto;
+    box-shadow: 3px 3px  5px grey;
+    border-radius: 5px;
+}
+.speciality div:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 180, 186, 0.8);
+}
+.speciality p{
+padding: 20px;
+}
+
+
+.speciality img{
+    width: 50%;
+    border-radius: 35%;
+    margin: 10px;
+    height: 70px;
+}
+
+#btn{
+    border: 1px solid red;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+#btn:hover{
+    background-color: transparent;
+    color: #000;
+}
+
+#speciality div a #btn{
+    margin: 20px;
+}
+
+.gallery{
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.gallery img {
+    float: left;
+    width: 32%;
+    margin: 1px;
+    height: 40vh;
+    padding: 10px;  
+    border-radius: 16px;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+.gallery img:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#about{
+    height: auto;
+    padding: 20px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+#contact{
+    width: 100%;
+   text-align: center;
+   padding-top:30px ;
+   padding-bottom: 100px;
+   color: rgb(5, 0, 0);
+   background-color: rgb(5, 5, 5);
+   background-image: url(bg2.jpg) ;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+}
+#call{
+    text-decoration: none;
+   margin: 30px;
+   border: 1px solid rgb(248, 4, 4);
+   color: white;
+   background-color: red;
+   padding: 5px;
+}
+#call:hover{
+    color: #000;
+    background-color:white;
+}
+#contact ul{
+    margin: 20px;
+}
+#contact h2{
+   color:  #73008c;
+   padding:20px;
+   font-size :50px;
+   font-weight:1000;
+   padding-bottom: 20px; 
+   font-size: 40px;
+}
+
+#contact ul li{
+    list-style: none;
+    display: inline;
+    margin:0 15px;
+}
+
+#contact ul li .fa{
+    font-size: 30px;
+    line-height: 60px;
+    transition: 0.6s;
+    color:#000;
+}
+#contact ul li a{
+   position: relative;
+   display: inline-block;
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   background-color: #fff;
+   text-align: center;
+   transition: .6s;
+   box-shadow:0 5px 4px rgba(219, 193, 193, 0.5)
+}
+#contact ul li a:hover{
+   transform: translate(0,-10px);
+}
+#contact ul li.fa:hover{
+   color: rgb(243, 232, 232);
+}
+#contact ul li:nth-child(1) a:hover{
+
+   background-color: #007bb5;
+}
+#contact ul li:nth-child(2) a:hover{
+   
+   background-color:  #c32aa3 ;
+}
+#contact ul li:nth-child(3) a:hover{
+   
+   background-color:   #1da1f2;
+}
+#contact ul li:nth-child(4) a:hover{
+   
+   background-color: #3b5999;
+}
+#contact ul li:nth-child(5) a:hover{
+   
+   background-color:floralwhite;
+}
+#contact div{
+    margin:30px;
+
+}
+
+
+
