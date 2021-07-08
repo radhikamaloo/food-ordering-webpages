@@ -75,7 +75,8 @@ nav li a:hover{
     color: azure;
     padding: 10px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 50px;
     font-style:italic;
     text-shadow: 1px 1px wheat;
 }
@@ -112,10 +113,15 @@ h1{
 span{
     color: red;
 }
-.speciality div{
-    float: left;
+.speciality{
+    display: grid;
+   /* grid-template-columns:repeat(3,auto); */
+   grid-template-columns: repeat(auto-fit,minmax(400px,1.5fr));
+    grid-column-gap: 10px;
+}
+
+.speciality div{  
     margin: 2px;
-    width: 32%;
     padding:  3px 10px;
     padding-bottom: 10px;
     border: 1px  solid black;
@@ -124,7 +130,9 @@ span{
     height: auto;
     box-shadow: 3px 3px  5px grey;
     border-radius: 5px;
-}
+   
+} 
+
 .speciality div:hover{
     box-shadow: 0 0 2px 1px rgba(0, 180, 186, 0.8);
 }
@@ -134,10 +142,12 @@ padding: 20px;
 
 
 .speciality img{
-    width: 50%;
-    border-radius: 35%;
+    width: 90%;
+    border-radius:16px;
     margin: 10px;
-    height: 70px;
+    height:150px;
+    border: 2px dotted red;
+    padding: 2px;
 }
 
 #btn{
